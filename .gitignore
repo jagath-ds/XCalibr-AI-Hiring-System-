@@ -1,0 +1,24 @@
+# --- GLOBAL ---
+.DS_Store
+.env
+.vscode/
+
+# --- BACKEND (Python) ---
+backend/venv/
+backend/__pycache__/
+backend/*.py[cod]
+backend/static/resumes/
+backend/uploaded_linkedin_pdfs/
+*.log
+
+# --- FRONTEND (React) ---
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env.local
+
+# --- Secrets (NEVER UPLOAD) ---
+.env
+backend/.env
+frontend/.env
+*.env

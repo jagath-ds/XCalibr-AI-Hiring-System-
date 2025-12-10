@@ -1,0 +1,56 @@
+/* In VideoModal.css */
+
+/* This is the button that opens the modal */
+.how-it-works-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  /* Add your own button styling */
+}
+
+/* The dark background behind the modal.
+  It's fixed to cover the whole screen.
+*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* The white pop-up box */
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  /* Adjust max-width as needed */
+  max-width: 600px; 
+  width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* The '×' close button */
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #555;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Makes the video responsive */
+.modal-content video {
+  width: 100%;
+  height: auto;
+}

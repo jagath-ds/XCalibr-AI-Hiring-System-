@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-100 text-slate-600;
+}
+
+phone-input-custom-wrapper .PhoneInputInput {
+  width: 100% !important;
+  @apply p-3 bg-slate-50 border border-slate-200 rounded-lg; /* Matches your other inputs */
+  
+  /* Reset default phone input styles */
+  border: 1px solid #e2e8f0; /* slate-200 */
+}
+
+/* Style the input field on focus */
+.phone-input-custom-wrapper .PhoneInputInput:focus {
+  @apply ring-primary border-primary; /* Matches Tailwind focus */
+  outline: none;
+  box-shadow: 0 0 0 1px #3b82f6; /* Adjust primary color if needed */
+  border-color: #3b82f6;
+}
+
+/* Style the country select dropdown */
+.phone-input-custom-wrapper .PhoneInputCountry {
+  @apply p-3;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}
